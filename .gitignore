@@ -3,6 +3,12 @@ lab-core/.idea/*
 
 lab-core/lab-core.iml
 
+lab-core/target
+
+lab-util/lab-util.iml
+
+lab-util/target
+
 lab-util/.idea/*
 
 *.class
