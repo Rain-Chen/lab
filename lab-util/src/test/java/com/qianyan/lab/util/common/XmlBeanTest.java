@@ -1,5 +1,6 @@
 package com.qianyan.lab.util.common;
 
+import junit.framework.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -41,5 +42,13 @@ public class XmlBeanTest {
         xmlBean2.fromXML(xml2);
         xmlBean1.append(xmlBean2);
         System.out.println(xmlBean1);
+    }
+
+    @Test
+    public void testGetAttr() {
+        String xml = "<Hello><world id='123'>你好</world></Hello>";
+        XmlBean xmlBean = new XmlBean();
+        xmlBean.fromXML(xml);
+        Assert.assertEquals("{id=123}", xmlBean.getAttr("Hello.world").toString());
     }
 }
