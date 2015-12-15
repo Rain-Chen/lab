@@ -28,4 +28,14 @@ public interface LabUtilErrorMessageConst {
      * 200002=XMLBean初始化，XmlNode长度必须为1
      */
     String ERROR_MESSAGE_200002 = "200002";
+
+    /**
+     * 200003=字符不是有效的[{0}]日期格式
+     */
+    String ERROR_MESSAGE_200003 = "200003";
+
+    /**
+     * 200004=[{0}]不是有效的[{1}]格式
+     */
+    String ERROR_MESSAGE_200004 = "200004";
 }
