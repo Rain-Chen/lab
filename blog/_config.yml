@@ -1,0 +1,68 @@
+# Site settings
+title: Rain Chen
+SEOTitle: RainChen的博客 | RainChen Blog
+header-img: img/home-bg.jpg
+email: lzrainchen@icloud.com
+description: "Java 框架 | RainChen，Web"
+url: "114.215.134.183"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     LZ_Rain-Chen
+zhihu_username:     
+github_username:	Rain-Chen
+#twitter_username:  rcpro
+facebook_username:  
+
+
+
+# Build settings
+highlighter: pygments
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# ga_domain: 
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Rain Chen，男，就读于某非名牌大学（面临毕业），一个普通的普通人，一个丢在人堆里容易被淹没的人；一个具备成熟男人的年龄，但不具备成熟男人心理的人；一个已经开始变老，但仍拒绝长大的人，一个非常懒，但梦想拯救世界的程序员"
+sidebar-avatar: /img/avatar-rainchen.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "鲁家宁的个人小站",
+        href: "http://mvc.coding.io/"
+    }
+]
