@@ -12,3 +12,9 @@ lab-util/target
 lab-util/.idea/*
 
 *.class
+
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*.sh
+
