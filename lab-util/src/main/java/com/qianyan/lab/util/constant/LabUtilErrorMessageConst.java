@@ -38,4 +38,21 @@ public interface LabUtilErrorMessageConst {
      * 200004=[{0}]不是有效的[{1}]格式
      */
     String ERROR_MESSAGE_200004 = "200004";
+
+    /**
+     * 200005=字符数组[{0}]编码失败
+     */
+    String ERROR_MESSAGE_200005 = "200005";
+
+    /**
+     * 200006=文件加载失败，路径为[{0}]
+     */
+    String ERROR_MESSAGE_200006 = "200006";
+
+    /**
+     * 200007=文件[{0}]创建错误
+     */
+    String ERROR_MESSAGE_200007 = "200007";
+
+
 }
