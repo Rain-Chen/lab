@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRegistry;
  * type definitions, element declarations and model 
  * groups.  Factory methods for each of these are 
  * provided in this class.
- * 
+ *
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -24,14 +24,14 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.shfb.oframe.core.util.cache.config
-     * 
+     *
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheListeners.CacheListener }
-     * 
+     *
      */
     public CacheManagerInfo.CacheListeners.CacheListener createCacheManagerInfoCacheListenersCacheListener() {
         return new CacheManagerInfo.CacheListeners.CacheListener();
@@ -39,7 +39,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheEngines.CacheEngine }
-     * 
+     *
      */
     public CacheManagerInfo.CacheEngines.CacheEngine createCacheManagerInfoCacheEnginesCacheEngine() {
         return new CacheManagerInfo.CacheEngines.CacheEngine();
@@ -47,7 +47,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheItems.CacheItem }
-     * 
+     *
      */
     public CacheManagerInfo.CacheItems.CacheItem createCacheManagerInfoCacheItemsCacheItem() {
         return new CacheManagerInfo.CacheItems.CacheItem();
@@ -55,7 +55,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheEngines }
-     * 
+     *
      */
     public CacheManagerInfo.CacheEngines createCacheManagerInfoCacheEngines() {
         return new CacheManagerInfo.CacheEngines();
@@ -63,7 +63,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo }
-     * 
+     *
      */
     public CacheManagerInfo createCacheManagerInfo() {
         return new CacheManagerInfo();
@@ -71,7 +71,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheListeners }
-     * 
+     *
      */
     public CacheManagerInfo.CacheListeners createCacheManagerInfoCacheListeners() {
         return new CacheManagerInfo.CacheListeners();
@@ -79,7 +79,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheEngines.CacheEngine.Params }
-     * 
+     *
      */
     public CacheManagerInfo.CacheEngines.CacheEngine.Params createCacheManagerInfoCacheEnginesCacheEngineParams() {
         return new CacheManagerInfo.CacheEngines.CacheEngine.Params();
@@ -87,7 +87,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link Param }
-     * 
+     *
      */
     public Param createParam() {
         return new Param();
@@ -95,7 +95,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheItems }
-     * 
+     *
      */
     public CacheManagerInfo.CacheItems createCacheManagerInfoCacheItems() {
         return new CacheManagerInfo.CacheItems();
@@ -103,7 +103,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheItems.CacheItem.Params }
-     * 
+     *
      */
     public CacheManagerInfo.CacheItems.CacheItem.Params createCacheManagerInfoCacheItemsCacheItemParams() {
         return new CacheManagerInfo.CacheItems.CacheItem.Params();
@@ -111,7 +111,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CacheManagerInfo.CacheListeners.CacheListener.Params }
-     * 
+     *
      */
     public CacheManagerInfo.CacheListeners.CacheListener.Params createCacheManagerInfoCacheListenersCacheListenerParams() {
         return new CacheManagerInfo.CacheListeners.CacheListener.Params();

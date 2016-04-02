@@ -40,7 +40,18 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.3</version>
         </dependency>
-
+        <dependency>
+            <groupId>ehcache.ee</groupId>
+            <artifactId>ehcacheee</artifactId>
+            <version>2.6.2</version>
+            <classifier>ehcacheee</classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>bigmemory</groupId>
             <artifactId>bigmemory</artifactId>

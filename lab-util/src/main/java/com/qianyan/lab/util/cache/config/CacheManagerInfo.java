@@ -1,9 +1,13 @@
 
 package com.qianyan.lab.util.cache.config;
 
-import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -136,7 +140,7 @@ import java.util.List;
 @XmlRootElement(name = "CacheManagerInfo")
 public class CacheManagerInfo {
 
-    @XmlElement(name = "CacheEngines", required = true)
+    @XmlElement(name = "cacheEngines", required = true)
     protected CacheManagerInfo.CacheEngines cacheEngines;
     @XmlElement(name = "CacheListeners", required = true)
     protected CacheManagerInfo.CacheListeners cacheListeners;
@@ -265,7 +269,7 @@ public class CacheManagerInfo {
     public static class CacheEngines {
 
         @XmlElement(name = "CacheEngine", required = true)
-        protected List<CacheEngine> cacheEngine;
+        protected List<CacheManagerInfo.CacheEngines.CacheEngine> cacheEngine;
 
         /**
          * Gets the value of the cacheEngine property.
@@ -289,9 +293,9 @@ public class CacheManagerInfo {
          *
          *
          */
-        public List<CacheEngine> getCacheEngine() {
+        public List<CacheManagerInfo.CacheEngines.CacheEngine> getCacheEngine() {
             if (cacheEngine == null) {
-                cacheEngine = new ArrayList<CacheEngine>();
+                cacheEngine = new ArrayList<CacheManagerInfo.CacheEngines.CacheEngine>();
             }
             return this.cacheEngine;
         }
@@ -556,7 +560,7 @@ public class CacheManagerInfo {
     public static class CacheItems {
 
         @XmlElement(name = "CacheItem")
-        protected List<CacheItem> cacheItem;
+        protected List<CacheManagerInfo.CacheItems.CacheItem> cacheItem;
 
         /**
          * Gets the value of the cacheItem property.
@@ -580,9 +584,9 @@ public class CacheManagerInfo {
          *
          *
          */
-        public List<CacheItem> getCacheItem() {
+        public List<CacheManagerInfo.CacheItems.CacheItem> getCacheItem() {
             if (cacheItem == null) {
-                cacheItem = new ArrayList<CacheItem>();
+                cacheItem = new ArrayList<CacheManagerInfo.CacheItems.CacheItem>();
             }
             return this.cacheItem;
         }
@@ -873,7 +877,7 @@ public class CacheManagerInfo {
     public static class CacheListeners {
 
         @XmlElement(name = "CacheListener")
-        protected List<CacheListener> cacheListener;
+        protected List<CacheManagerInfo.CacheListeners.CacheListener> cacheListener;
 
         /**
          * Gets the value of the cacheListener property.
@@ -897,9 +901,9 @@ public class CacheManagerInfo {
          *
          *
          */
-        public List<CacheListener> getCacheListener() {
+        public List<CacheManagerInfo.CacheListeners.CacheListener> getCacheListener() {
             if (cacheListener == null) {
-                cacheListener = new ArrayList<CacheListener>();
+                cacheListener = new ArrayList<CacheManagerInfo.CacheListeners.CacheListener>();
             }
             return this.cacheListener;
         }

@@ -38,7 +38,7 @@ public final class StringUtil {
     private static final Log log = LogFactory.getLog(StringUtil.class);
 
     //web工程根路径，默认值
-    private static String webRootPath = PropertiesUtil.readString("lab-util", "");
+    private static String webRootPath = PropertiesUtil.readString("lab-util", "com.qianyan.lab.util.common.stringutil.web_path", false);
 
     //单利
     private StringUtil() {

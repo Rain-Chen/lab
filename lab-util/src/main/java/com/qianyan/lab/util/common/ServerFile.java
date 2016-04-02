@@ -72,7 +72,7 @@ public final class ServerFile {
                 boolean newFile = file.createNewFile();
             } catch (IOException e) {
                 throw new SystemException(LabUtilErrorMessageConst.MODULE_NAME,
-                        e, LabUtilErrorMessageConst.ERROR_MESSAGE_200006, fileName);
+                        e, LabUtilErrorMessageConst.ERROR_MESSAGE_200007, fileName);
             }
         }
         return file;
@@ -97,7 +97,7 @@ public final class ServerFile {
                 boolean newFile = file.createNewFile();
             } catch (IOException e) {
                 throw new SystemException(LabUtilErrorMessageConst.MODULE_NAME,
-                        e, LabUtilErrorMessageConst.ERROR_MESSAGE_200006, fileName);
+                        e, LabUtilErrorMessageConst.ERROR_MESSAGE_200007, fileName);
             }
         }
         return file;
@@ -116,7 +116,7 @@ public final class ServerFile {
     /**
      * 生成随机文件名称使用UUID生成(包含"-")
      *
-     * @param fileType 文件后缀
+     * @param fileType 文件后
      * @return 文件名称
      */
     public static String generateFileName(String fileType) {

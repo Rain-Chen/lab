@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GBK"?>
+<configuration package="com.sitech.crmtpd.common.log.appender.dynamic"
+               status="debug" monitorInterval="5">
+    <!-- 定义变量参数 -->
+    <properties>
+        <!--日志输出目录-->
+        <Property name="logDir">log/</Property>
+        <!--日志备份目录-->
+        <Property name="logBackupDir">log/backup/</Property>
+        <!--系统日志名称-->
+        <Property name="sysName">eland</Property>
+    </properties>
+    <!-- 定义日志输出位置 -->
+    <appenders>
+        <!-- 输出日志到控制台 -->
+        <Console name="con">
+            <PatternLayout pattern="%d [%-5p][%24c{1}:%-3L] %m%n%throwable" charset="GBK"/>
+        </Console>
+    </appenders>
+
+    <!--类输出控制-->
+    <loggers>
+        <logger name="com.mchange" level="INFO">
+            <AppenderRef ref="con"/>
+        </logger>
+        <root level="DEBUG">
+            <appender-ref ref="con"/>
+        </root>
+
+    </loggers>
+</configuration>

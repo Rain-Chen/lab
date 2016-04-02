@@ -72,7 +72,7 @@ public class DateUtilTest {
     public void testToDateYmdHmsWithM() throws Exception {
         System.out.println(DateUtil.toDateYmdHmsWithM("2016-01-27 15:43:50"));
         //测试报错
-        //System.out.println(DateUtil.toDateYmdHmsWithM("2016-01-27 abc"));
+        System.out.println(DateUtil.toDateYmdHmsWithM("2016-01-27 abc"));
     }
 
     @Test

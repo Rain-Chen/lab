@@ -1,11 +1,14 @@
 package com.qianyan.lab.util.properties;
 
+import com.qianyan.lab.util.cache.CacheManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
+import static com.qianyan.lab.util.cache.CacheManager.getInstance;
 
 /**
  * Created with Intellij IDEA.
@@ -16,11 +19,9 @@ import java.util.Properties;
  */
 public final class PropertiesUtil {
 
-    private static Log log = LogFactory.getLog(PropertiesUtil.class);
-
     private static final String PROPERTIES_FILE_CACHE = "CONFIG_CACHE";
-
     private static final String DEFAULT = "lab";
+    private static Log log = LogFactory.getLog(PropertiesUtil.class);
 
     /**
      * 私有化构造方法
@@ -134,11 +135,10 @@ public final class PropertiesUtil {
         }
         Properties properties = null;
         if (cacheFlag) {
-            //TODO 缓存中获取
-            //properties = CacheManager
+            properties = CacheManager.getInstance().get(PROPERTIES_FILE_CACHE, fileName);
             if (properties == null) {
-                //properties = readPropertyFile(fileName);
-                //CacheManager.getInstance().put();
+                properties = readPropertyFile(fileName);
+                getInstance().put(PROPERTIES_FILE_CACHE, fileName, properties);
             }
         } else {
             properties = readPropertyFile(fileName);
